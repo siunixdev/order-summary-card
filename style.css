@@ -57,6 +57,7 @@ body {
 
 .content__title {
   color: var(--dark-blue);
+  font-weight: 900;
 }
 
 .content__desc {
