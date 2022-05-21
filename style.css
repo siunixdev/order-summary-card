@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  /* Primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--pale-blue);
+  font-family: 'Red Hat Display';
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  width: 400px;
+  box-shadow: 0px 20px 40px -20px var(--desaturated-blue);
+}
+
+.card__hero {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card__content {
+  padding: 30px;
+  text-align: center;
+}
+
+.content__title {
+  color: var(--dark-blue);
+}
+
+.content__desc {
+  color: var(--desaturated-blue);
+}
+
+.content__detail {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.detail__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail__left-icon {
+  margin-right: 10px;
+}
+
+.detail__left-title {
+  color: var(--dark-blue);
+}
+
+.detail__left-desc {
+  color: var(--desaturated-blue);
+}
+
+.detail__left-link {
+  color: var(--bright-blue);
+}
+
+.detail__left-link:hover {
+  color: var(--dark-blue);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.submit {
+  background-color: var(--bright-blue);
+  color: white;
+  width: 100%;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px -10px var(--pale-blue);
+}
+
+.submit:hover {
+  opacity: 0.7;
+}
+
+.cancel {
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+
+.cancel:hover {
+  color: black;
+}
